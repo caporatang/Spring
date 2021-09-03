@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+  <!-- - mybatis-config = root-context 에서 bean id가 config 인것 즉 이파일에서 세팅한것을 root-context로 끼워준거임. -->
+<configuration>
+   <typeAliases>
+      <typeAlias type="com.mega.mvc13.MemberDTO" alias="memberDTO"></typeAlias>
+      <typeAlias type="com.mega.mvc13.BbsDTO" alias="bbsDTO"></typeAlias>
+      <typeAlias type="com.mega.mvc13.FaqDTO" alias="faqDTO"></typeAlias>
+   </typeAliases>
+   <mappers>
+      <mapper resource="mapper/memberMapper.xml" />
+      <mapper resource="mapper/bbsMapper.xml" />
+      <mapper resource="mapper/faqMapper.xml" />
+   </mappers>
+</configuration>

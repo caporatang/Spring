@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="bbs"> <!-- 같은 폴더 내에 같은 아이디들은 namespace로 구분된다 -->
+<!-- bbs.all       member.all -->
+<!-- name스페이스는 이름 변경 상관없음 -->
+<insert id="add" parameterType="bbsDTO">
+		insert into BBS values (#{id},#{title},#{content},#{writer})
+</insert>
+<select id="all"></select>
+<select id="one"></select>
+<delete id="del"></delete>
+<update id="up"></update>
+</mapper>

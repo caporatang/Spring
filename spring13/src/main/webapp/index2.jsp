@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body bgcolor="green">
+welcome!! member page.!
+<hr>
+<form action="bbs.mega">
+id : <input name="id">
+title : <input name="title">
+content : <input name="content">
+writer : <input name="writer">
+<button>게시판 글 작성 요청</button>
+</form>
+
+</body>
+</html>
