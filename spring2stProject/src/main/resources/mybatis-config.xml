@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+  <!-- - mybatis-config = root-context 에서 bean id가 config 인것 즉 이파일에서 세팅한것을 root-context로 끼워준거임. -->
+<configuration>
+   <typeAliases>
+      <!-- <typeAlias type="com.fly.pro2.MemberDTO" alias="memberDTO"></typeAlias> -->
+       <typeAlias type="com.fly.pro2.QuestionDTO" alias="questionDTO"></typeAlias>
+   </typeAliases>
+   <mappers>
+       <mapper resource="mapper/questionMapper.xml" />
+   </mappers>
+</configuration>
