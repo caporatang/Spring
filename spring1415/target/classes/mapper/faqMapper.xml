@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="faq">
+		<insert id="faqAdmin" parameterType="faqDTO">
+			insert into FAQ values (#{qNo},#{qKind},#{qTitle},#{qContent})
+		</insert>
+		
+		<select id="faqTwo" parameterType="faqDTO" resultType="faqDTO">
+		select * from FAQ where qNo = #{qNo}
+		</select>
+		
+</mapper>

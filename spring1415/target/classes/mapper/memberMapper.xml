@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="member">
+	<insert id="create" parameterType="memberDTO">
+		insert into MEMBER values (#{id},#{pw},#{name},#{tel})
+	</insert>
+	
+	
+<!--  전체검색하는 부분  select할때는 resultType을 반드시 작성 -->
+<select id="all" resultType="memberDTO">  
+		select * from MEMBER
+</select>
+
+<!-- 한줄읽기 , 리턴타입을 적어줘야함. db컬럼명과 dto에 있는 변수이름이 같아야한다. -->
+<select id="one" parameterType="memberDTO" resultType="memberDTO"> 
+		select * from MEMBER where id = #{id}
+</select>
+<delete id="del" parameterType="memberDTO">
+delete from MEMBER where id = #{id}
+
+</delete>
+<update id="up"></update>
+
+<select id="check2" parameterType="memberDTO" resultType="memberDTO">
+		select id from MEMBER where id = #{id}
+</select>
+
+</mapper>
