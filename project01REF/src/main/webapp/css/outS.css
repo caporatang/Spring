@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+
+
+/* li{
+	list-style: none;
+	float: left;
+	font-size: 20px;
+	font-weight: BOLD;
+	color: orange;
+	margin: 30px;
+} */
+
+#center1{
+	width: 1200px;
+	height: 600px;
+}
+
+.tab1 {
+	list-style: none;
+	float: left;
+	font-size: 20px;
+	font-weight: BOLD;
+	color: orange;
+	margin: 30px;
+}
+
+.tab1:hover { /*마우스올렸을때 효과*/
+	text-decoration: underline;
+}
+
+.tab1 {
+	color: orange;
+	text-decoration: none;
+}
+#top11 { /* 메뉴바영역 */
+	width: 950px;
+	height: 60px;
+	position: fixed;
+	top: 125px;
+	left: 220px;
+}
